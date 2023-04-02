@@ -1,3 +1,4 @@
+const config = require("./config);
 require("./server.js")
 const { Client } = require('discord.js-selfbot-v13'); // npm i discord.js-selfbot-v13
 const client = new Client({
@@ -19,4 +20,4 @@ Time: 15 // Type ""Time With Second
 
 
 
-client.login(process.env.token) // Put Token Accoun
+client.login(config.token) // Put Token Accoun
